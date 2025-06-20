@@ -1,0 +1,5 @@
+key	text	tooltip
+#Loc;1;text/db/kafka_GarrisonedArmyUpkeepReduction.loc		
+effect_bundles_localised_title_kafka_garrisoned_army_upkeep_bundle	Army Garrisoned	false
+effect_bundles_localised_description_kafka_garrisoned_army_upkeep_bundle	As long as this army is stationed in a garrison, it will slowly reduce its upkeep.	false
+effects_description_kafka_garrisoned_army_upkeep_effect	Upkeep: %+n% for all units in this army.	false

@@ -1,0 +1,6 @@
+value overview is bugged for beastment at least
+    only garrisons are shown, not armies -not fixed
+heroes cost no points - make configurable and add default cost
+dont show heroes max count for ai
+ai downgrade switch
+    performance check

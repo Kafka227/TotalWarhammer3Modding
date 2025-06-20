@@ -1,0 +1,4 @@
+key	text	tooltip
+#Loc;1;text/db/kafka_aucm.loc		
+effect_bundles_localised_title_kafka_army_cost_limit_penalty	Over limit	false
+effect_bundles_localised_description_kafka_army_cost_limit_penalty	This army is over the cost limit and is therefore penalized.	false

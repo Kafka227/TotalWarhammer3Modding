@@ -1,0 +1,5 @@
+key	building	unit	XP	conditions	faction	enabled
+#building_units_allowed_tables;4;db/building_units_allowed_tables/kafka_plagueclaw						
+1217135102	wh2_main_skv_plagues_1	wh2_main_skv_art_plagueclaw_catapult	0	0		false
+1520953464	wh2_main_skv_plagues_3	wh2_main_skv_art_plagueclaw_catapult	0	0		false
+1622917998	wh2_main_skv_plagues_2	wh2_main_skv_art_plagueclaw_catapult	0	0		false

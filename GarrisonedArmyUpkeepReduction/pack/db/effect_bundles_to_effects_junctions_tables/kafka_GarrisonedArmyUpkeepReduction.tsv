@@ -1,0 +1,3 @@
+effect_bundle_key	effect_key	effect_scope	value	advancement_stage
+#effect_bundles_to_effects_junctions_tables;3;db/effect_bundles_to_effects_junctions_tables/kafka_GarrisonedArmyUpkeepReduction				
+kafka_garrisoned_army_upkeep_bundle	kafka_garrisoned_army_upkeep_effect	force_to_force_own	-10.0000	start_turn_completed
