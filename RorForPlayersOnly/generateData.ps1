@@ -8,7 +8,7 @@ Push-Location $dir
 $tmpPath = "./tmp"
 $rpfmPath = "../../_RustPackFileManager\rpfm_cli.exe"
 $dbPackFilePath = "E:/SteamLibrary/steamapps/common/Total War WARHAMMER III/data/db.pack"
-$tw3Schema = "../schema_wh3.ron"
+$tw3Schema = "$env:APPDATA/FrodoWazEre/rpfm/config/schemas/schema_wh3.ron"
 $extractPath = "/db/main_units_tables/data__;$tmpPath"
 & $rpfmPath --game warhammer_3 pack extract -p $dbPackFilePath -t $tw3Schema -f $extractPath
 $unitsFilePath = "./tmp/db/main_units_tables/data__.tsv"

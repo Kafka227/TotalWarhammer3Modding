@@ -1,6 +1,5 @@
 $rpfmPath = "..\_RustPackFileManager\rpfm_cli.exe"
-# \AppData\Roaming\FrodoWazEre\rpfm\config\schemas\schema_wh3.ron
-$tw3Schema = ".\schema_wh3.ron"
+$tw3Schema = "$env:APPDATA/FrodoWazEre/rpfm/config/schemas/schema_wh3.ron"
 $files = Get-ChildItem ".\"
 foreach ($f in $files) {
     # Work per folder
@@ -16,6 +15,7 @@ foreach ($f in $files) {
     }
     $folderName
     # Run buildscript
+    #TODO pass paths as parameters
     $generationScript = "$folderNameFull\generateData.ps1"
     $genFolderName = "$folderNameFull\gen"
     if(Test-Path $generationScript -PathType Leaf)
