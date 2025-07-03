@@ -1,7 +1,7 @@
 local gaur = core:get_static_object("gaur")
 
 function gaur:log(str)
-    if not gaur.settings.debug_internal then
+    if not gaur.settings.logging_enabled then
         return
     end
 	local logFile = io.open("kafka.txt", "a")

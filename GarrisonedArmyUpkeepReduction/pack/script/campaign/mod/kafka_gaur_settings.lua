@@ -5,7 +5,8 @@ gaur.settings = {
 	upper_bound = 80,
 	step_size_increase = 10,
 	apply_to_ai = false,
-	debug_internal = false
+	track_army_cost = true,
+	logging_enabled = false
 }
 
 -- Load setting from mct when available
@@ -42,4 +43,6 @@ function gaur:updateSettings()
 	gaur.settings.upper_bound = my_mod:get_option_by_key("upper_bound"):get_finalized_setting()
 	gaur.settings.step_size_increase = my_mod:get_option_by_key("step_size_increase"):get_finalized_setting()
 	gaur.settings.apply_to_ai = my_mod:get_option_by_key("apply_to_ai"):get_finalized_setting()
+	gaur.settings.track_army_cost = my_mod:get_option_by_key("track_army_cost"):get_finalized_setting()
+	gaur.settings.logging_enabled = my_mod:get_option_by_key("logging_enabled"):get_finalized_setting()
 end

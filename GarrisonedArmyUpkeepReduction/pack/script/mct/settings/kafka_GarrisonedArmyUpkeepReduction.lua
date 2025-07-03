@@ -26,7 +26,17 @@ option_lower_bound:slider_set_min_max(0, 100);
 option_lower_bound:slider_set_step_size(5);
 option_lower_bound:set_default_value(10);
 
+local option_track_army_cost = mct_mod:add_new_option("track_army_cost", "checkbox");
+option_track_army_cost:set_text("Track army cost");
+option_track_army_cost:set_tooltip_text("Also removes the upkeep reduction if the total (multiplayer)cost of the army changes.");
+option_track_army_cost:set_default_value(true);
+
 local option_apply_to_ai = mct_mod:add_new_option("apply_to_ai", "checkbox");
 option_apply_to_ai:set_text("Applies to ai");
 option_apply_to_ai:set_tooltip_text("Upkeep reduction also applies to ai.");
 option_apply_to_ai:set_default_value(false);
+
+local option_logging_enabled = mct_mod:add_new_option("logging_enabled", "checkbox")
+option_logging_enabled:set_text("Logging")
+option_logging_enabled:set_tooltip_text("Outputs the mod's logging to kafka.txt in the game's root folder.")
+option_logging_enabled:set_default_value(false)
