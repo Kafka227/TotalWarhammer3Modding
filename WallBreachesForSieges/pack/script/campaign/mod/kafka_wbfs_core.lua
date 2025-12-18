@@ -71,7 +71,7 @@ function wbfs:loadTables()
 end
 
 function wbfs:saveTables()
-	cm:set_saved_value(wbfs.tracker_key, bfs.tracker);
+	cm:set_saved_value(wbfs.tracker_key, wbfs.tracker);
 end
 
 function wbfs:saveTableEntry(characterBesieger, settlementBesieged2, turn2)

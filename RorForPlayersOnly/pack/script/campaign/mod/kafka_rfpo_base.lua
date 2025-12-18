@@ -14,7 +14,7 @@ core:add_listener(
 )
 
 function rfpo:apply()
-	rfpo:log("Removing RoR from AI recruitment pools")
+	rfpo:log("Removing RoR from recruitment pools")
 	local applied = cm:get_saved_value(rfpo.applied_key);
 	if applied then
 		rfpo:log("Already applied")
@@ -25,11 +25,8 @@ function rfpo:apply()
 	for factionIndex = 0, factionList:num_items() - 1 do
 		local faction = factionList:item_at(factionIndex)
 		if (faction:is_human() and rfpo.settings.apply_player) or (not faction:is_human() and rfpo.settings.apply_ai) then
-			local factionName = faction:name()
-			for i = 1, #rfpo.ror do
-				local unitName = rfpo.ror[i]
-				cm:add_unit_to_faction_mercenary_pool(faction, unitName, "mercenary_recruitment", 0, 0, 0, 0, "", "", "", false, unitName)
-			end
+			local custom_eb = cm:create_new_custom_effect_bundle("kafka_rfpo_bundle")
+			cm:apply_custom_effect_bundle_to_faction(custom_eb, faction)
 		end
 	end
 	cm:set_saved_value(rfpo.applied_key, true);

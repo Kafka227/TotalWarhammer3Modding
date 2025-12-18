@@ -27,10 +27,10 @@ foreach ($f in $files) {
     if(Test-Path $packFileName) {
         Remove-Item -Path $packFileName
     }
-    & $rpfmPath --game warhammer_3 pack create -p $packFileName
-    & $rpfmPath --game warhammer_3 pack add -F $importFolderName -p $packFileName -t $tw3Schema
+    & $rpfmPath --game warhammer_3 pack create -p $packFileName > $null
+    & $rpfmPath --game warhammer_3 pack add -F $importFolderName -p $packFileName -t $tw3Schema > $null
     if(Test-Path $generationScript -PathType Leaf)
     {
-        & $rpfmPath --game warhammer_3 pack add -F $genFolderName -p $packFileName -t $tw3Schema
+        & $rpfmPath --game warhammer_3 pack add -F $genFolderName -p $packFileName -t $tw3Schema > $null
     }
 }

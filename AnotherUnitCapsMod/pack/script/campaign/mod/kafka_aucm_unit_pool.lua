@@ -68,12 +68,10 @@ end
 
 function aucm:generateUnitPoolInternal(faction)
 	local unitPool = {}
-	local characters = faction:character_list()
-	for i = 0, characters:num_items() - 1 do
-		local character = characters:item_at(i)
-		if character:has_military_force() then
-			aucm:addUnitsToUnitPool(character:military_force():unit_list(), unitPool)
-		end
+	local forces = faction:military_force_list()
+	for i = 0, forces:num_items() - 1 do
+		local force = forces:item_at(i)
+		aucm:addUnitsToUnitPool(force:unit_list(), unitPool)
 	end
 	return unitPool
 end

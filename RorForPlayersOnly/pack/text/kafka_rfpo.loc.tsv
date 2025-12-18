@@ -1,0 +1,4 @@
+key	text	tooltip
+#Loc;1;text/db/kafka_rfpo.loc		
+effect_bundles_localised_title_kafka_rfpo_bundle	Lack of Renown	false
+effect_bundles_localised_description_kafka_rfpo_bundle	You cannot recruit any regiments of renown.	false
